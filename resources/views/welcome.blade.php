@@ -55,7 +55,7 @@
 
           <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="	glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only"></span> 
           </a>
         </div>
       </div>
