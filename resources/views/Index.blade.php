@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
         <script src="/componentes/jquery/dist/jquery.min.js"></script>
         <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/Personalizados.css">
+
+
 
 
         <title>Laravel</title>
@@ -26,6 +29,19 @@
                     @endauth
                 </div>
             @endif
+
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                      <!-- <img src="/img/Innova-center.png" alt="Los Angeles" style="width:5%;"> -->
+                </a>
+            </div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Mision e inteligencia</a></li>
+              </ul>
+          </nav>
 
         <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -55,10 +71,11 @@
 
           <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="	glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only"></span> 
+            <span class="sr-only"></span>
           </a>
         </div>
       </div>
+
 
     </body>
 </html>
