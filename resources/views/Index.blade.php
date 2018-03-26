@@ -18,7 +18,7 @@
 
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <!-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -28,20 +28,31 @@
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif
+            @endif -->
 
-          <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                      <!-- <img src="/img/Innova-center.png" alt="Los Angeles" style="width:5%;"> -->
-                </a>
-            </div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#">Nuestros servicios</a></li>
-                <li><a href="#">Mision e inteligencia</a></li>
-              </ul>
-          </nav>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="#" target="_blank" style="color:#FBF9F9;">Innova-center VG</a>
+          </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Nuestros servicios</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mision e Inteligencia<b class="caret"></b></a>
+             <ul class="dropdown-menu">
+               <li><a href="#">Mision</a></li>
+               <li><a href="#">Inteligencia del negocio</a></li>
+             </ul>
+           </li>
+          </ul>
+        </div>
+      </nav>
 
         <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -75,7 +86,6 @@
           </a>
         </div>
       </div>
-
 
     </body>
 </html>
