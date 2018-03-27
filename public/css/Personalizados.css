@@ -1,3 +1,15 @@
 nav.navbar {
     background-color: #050404;
 }
+
+.carousel-control
+{
+    background-color: gray;
+    opacity: .4;
+}
+
+.carousel-control:hover
+{
+    background-color: gray;
+    opacity: .5;
+}

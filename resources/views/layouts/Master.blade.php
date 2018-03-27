@@ -8,21 +8,21 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('css')
-            <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.min.css"> 
+            <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.css"> 
 
-            <!-- bootstrap -->
+            <!-- bootstrap 
             <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
             <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
             <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-            
+            -->
             <link href="/vendor-plantill/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
             <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
             <link href="/vendor-plantill/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
             <link href="/css/freelancer.css" rel="stylesheet">
-
+            <link rel="stylesheet" href="/css/Personalizados.css">
             
             
             
@@ -30,7 +30,7 @@
 
                 <!-- <script src="/componentes/jquery/dist/jquery.min.js"></script>
         <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/css/Personalizados.css"> -->
+         -->
     </head>
 
     <body>
