@@ -1,30 +1,4 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.min.css">
-        <link href="/vendor-plantill/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-        <link href="/vendor-plantill/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-        <link href="/css/freelancer.css" rel="stylesheet">
-
-        <!-- <script src="/componentes/jquery/dist/jquery.min.js"></script>
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/css/Personalizados.css"> -->
-
-
-
-
-        <title>Laravel</title>
-
-    </head>
-    <body id="page-top">
+@extends('layouts.Master')
         <!-- <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -36,9 +10,8 @@
                     @endauth
                 </div>
             @endif -->
-
-          <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-            <div class="container">
+            @section('navbar')
+            @parent
               <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
               <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -57,10 +30,13 @@
                   </li>
                 </ul>
               </div>
-            </div>
-          </nav>
+            @stop
+@section('content')
 
-          <!-- Header -->
+              
+            
+
+          <!-- Header 
           <header class="masthead bg-primary text-white text-center">
             <div class="container">
               <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
@@ -69,6 +45,34 @@
               <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
             </div>
           </header>
+          -->
+         <!-- Header 2 -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/Innova-center.png" alt="Innova" style="width:100%;">
+    </div>
+
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
 
           <!-- Portfolio Grid Section -->
           <section class="portfolio" id="portfolio">
@@ -211,61 +215,6 @@
               </div>
             </div>
           </section>
-
-          <!-- Footer -->
-          <footer class="footer text-center">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Location</h4>
-                  <p class="lead mb-0">2215 John Daniel Drive
-                    <br>Clark, MO 65243</p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Around the Web</h4>
-                  <ul class="list-inline mb-0">
-                    <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                        <i class="fa fa-fw fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                        <i class="fa fa-fw fa-google-plus"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                        <i class="fa fa-fw fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                        <i class="fa fa-fw fa-linkedin"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                        <i class="fa fa-fw fa-dribbble"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4">
-                  <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                  <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                </div>
-              </div>
-            </div>
-          </footer>
-
-          <div class="copyright py-4 text-center text-white">
-            <div class="container">
-              <small>Copyright &copy; Your Website 2018</small>
-            </div>
-          </div>
-
           <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
           <div class="scroll-to-top d-lg-none position-fixed ">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -407,13 +356,7 @@
             </div>
           </div>
 
-          <script src="/vendor-plantill/jquery/jquery.min.js"></script>
-          <script src="/vendor-plantill/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script src="/vendor-plantill/jquery-easing/jquery.easing.min.js"></script>
-          <script src="/vendor-plantill/magnific-popup/jquery.magnific-popup.min.js"></script>
-          <script src="/js/jqBootstrapValidation.js"></script>
-          <script src="/js/contact_me.js"></script>
-          <script src="/js/freelancer.min.js"></script>
+          
+@stop
+    
 
-    </body>
-</html>
