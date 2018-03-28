@@ -12,7 +12,7 @@
             @endif -->
             @section('navbar')
             @parent
-              <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+              <a class="navbar-brand js-scroll-trigger" href="#carouselMain">Innova Center VG</a>
               <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -26,7 +26,10 @@
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacto</a>
+                  </li>
+                  <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Mapa">Cobertura</a>
                   </li>
                 </ul>
               </div>
@@ -159,10 +162,30 @@
             </div>
           </section>
 
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLQwkZF3EFZTOBqjHkCpO_J2HZ3be6y6s">
+          </script>
+
+          <section class="bg-primary text-white mb-0" id="Mapa">
+            <div class="container" id="validar">
+              <h2 class="text-center text-uppercase text-secondary mb-0">Cobertura</h2>
+              <hr class="star-dark mb-5">
+              <div class="row">
+                <div class="col-lg-8 ml-auto">
+                  <div id="map"></div>
+                </div>
+
+                <div class="col-lg-4 ml-auto">
+                  prueba
+                </div>
+
+              </div>
+            </div>
+          </section>
+
           <!-- Contact Section -->
           <section id="contact">
             <div class="container">
-              <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+              <h2 class="text-center text-uppercase text-secondary mb-0">Contactanos</h2>
               <hr class="star-dark mb-5">
               <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -348,6 +371,44 @@
               </div>
             </div>
           </div>
+
+          <!-- colocar la animacion de la informacion de los contactos -->
+
+          <script src="/vendor-plantill/jquery/jquery.min.js"></script>
+
+          <script type="text/javascript">
+
+          $( document ).ready(function() { initMap(); });
+
+                function initMap() {
+                    var myLatlng = {lat: -25.363, lng: 131.044};
+
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 4,
+                      center: myLatlng
+                    });
+
+                    var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title: 'Click to zoom'
+                    });
+
+                    map.addListener('center_changed', function() {
+                      // 3 seconds after the center of the map has changed, pan back to the
+                      // marker.
+                      window.setTimeout(function() {
+                        map.panTo(marker.getPosition());
+                      }, 3000);
+                    });
+
+                    marker.addListener('click', function() {
+                      map.setZoom(8);
+                      map.setCenter(marker.getPosition());
+                    });
+                  }
+
+          </script>
 
 
 @stop

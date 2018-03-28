@@ -20,6 +20,11 @@ nav.navbar {
     background-color: #003566 !important
 }
 
+#Mapa
+{
+  background-color: #FFFFFF !important
+}
+
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 .portfolio .portfolio-item .portfolio-item-caption
@@ -33,4 +38,11 @@ nav.navbar {
 {
      color: #fff;
     background-color: #ffd646;
+}
+
+
+#map
+{
+  height: 500px;
+  width: 700px
 }
