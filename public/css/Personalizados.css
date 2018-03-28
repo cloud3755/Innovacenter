@@ -13,3 +13,24 @@ nav.navbar {
     background-color: gray;
     opacity: .5;
 }
+
+#mainNav,
+#about
+{
+    background-color: #003566 !important
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+.portfolio .portfolio-item .portfolio-item-caption
+{
+    color: #fff;
+    background-color: #ecb700;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover
+{
+     color: #fff;
+    background-color: #ffd646;
+}
