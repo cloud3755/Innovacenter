@@ -23,7 +23,7 @@
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Nuestros Servicios</a>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Inteligencia del negocio</a>
                   </li>
                   <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contacto</a>
@@ -73,7 +73,7 @@
           <!-- Portfolio Grid Section -->
           <section class="portfolio" id="portfolio">
             <div class="container">
-              <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+              <h2 class="text-center text-uppercase text-secondary mb-0">Servicios</h2>
               <hr class="star-dark mb-5">
               <div class="row">
                 <div class="col-md-6 col-lg-4">
@@ -83,7 +83,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/cobranza.jpg" alt="">
+                    <p class="text-center">Cobranza Legal</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -93,7 +94,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/cobranzatel.jpg" alt="">
+                    <p class="text-center">Cobranza Telefonica</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -103,7 +105,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/cobranza-dom.jpg" alt="">
+                    <p class="text-center">Cobranza Domiciliaria</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -113,7 +116,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/game.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/asesoria.png" alt="">
+                    <p class="text-center" >Asesoria y ejecucion</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -123,7 +127,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/validacion.png" alt="">
+                    <p class="text-center" >Verificacion y validacion de credito</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -133,7 +138,8 @@
                         <i class="fa fa-search-plus fa-3x"></i>
                       </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+                    <img class="img-fluid" src="img/portfolio/soprtetecnico.jpg" alt="">
+                    <p class="text-center" >Atencion a clientes</p>
                   </a>
                 </div>
               </div>
@@ -143,7 +149,7 @@
           <!-- About Section -->
           <section class="bg-primary text-white mb-0" id="about">
             <div class="container">
-              <h2 class="text-center text-uppercase text-white">About</h2>
+              <h2 class="text-center text-uppercase text-white">Inteligencia del negocio</h2>
               <hr class="star-light mb-5">
               <div class="row">
                 <div class="col-lg-4 ml-auto">
@@ -172,11 +178,11 @@
 
                   </div>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-2 col-sm-2 ml-auto">
                   prueba
                 </div>
-                
+
               </div>
             </div>
           </section>
@@ -248,7 +254,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Cobranza Legal</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -270,7 +276,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Cobranza telefonica</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -292,7 +298,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Cobranza domiciliaria</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -314,7 +320,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Asesoria</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -336,7 +342,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Verificacion y validacion de credito</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -358,7 +364,7 @@
               <div class="container text-center">
                 <div class="row">
                   <div class="col-lg-8 mx-auto">
-                    <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+                    <h2 class="text-secondary text-uppercase mb-0">Atencion a clientes</h2>
                     <hr class="star-dark mb-5">
                     <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
@@ -373,7 +379,7 @@
           @section('scripts')
           @parent
           <!-- colocar la animacion de la informacion de los contactos -->
-          
+
           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLQwkZF3EFZTOBqjHkCpO_J2HZ3be6y6s"></script>
           <script src="/vendor-plantill/jquery/jquery.min.js"></script>
 

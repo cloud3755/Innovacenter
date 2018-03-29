@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('css')
-            <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.css"> 
+            <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.css">
 
-            <!-- bootstrap 
+            <!-- bootstrap
             <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
             <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
             <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -23,9 +23,9 @@
             <link href="/vendor-plantill/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
             <link href="/css/freelancer.css" rel="stylesheet">
             <link rel="stylesheet" href="/css/Personalizados.css">
-            
-            
-            
+
+
+
         @show
 
                 <!-- <script src="/componentes/jquery/dist/jquery.min.js"></script>
@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
             <div class="container">
         @section('navbar')
-        
+
         @show
             </div>
         </nav>
@@ -58,10 +58,10 @@
                     <br>Clark, MO 65243</p>
                 </div>
                 <div class="col-md-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Around the Web</h4>
+                  <h4 class="text-uppercase mb-4">Encuentranos en</h4>
                   <ul class="list-inline mb-0">
                     <li class="list-inline-item">
-                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <a class="btn btn-outline-light btn-social text-center rounded-circle" href="">
                         <i class="fa fa-fw fa-facebook"></i>
                       </a>
                     </li>
@@ -88,13 +88,12 @@
                   </ul>
                 </div>
                 <div class="col-md-4">
-                  <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                  <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-                    <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                  <h4 class="text-uppercase mb-4">Acerca de nosotros</h4>
+                  <p class="lead mb-0">Somos una empresa socialmente responsable.</p>
                 </div>
               </div>
             </div>
-            
+
           </div>
           <div class="copyright py-4 text-center text-white">
             <div class="container">
