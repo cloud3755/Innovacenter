@@ -162,22 +162,21 @@
             </div>
           </section>
 
-          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLQwkZF3EFZTOBqjHkCpO_J2HZ3be6y6s">
-          </script>
-
           <section class="bg-primary text-white mb-0" id="Mapa">
             <div class="container" id="validar">
               <h2 class="text-center text-uppercase text-secondary mb-0">Cobertura</h2>
               <hr class="star-dark mb-5">
               <div class="row">
-                <div class="col-lg-8 ml-auto">
-                  <div id="map"></div>
-                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 ml-auto">
+                  <div id="map">
 
-                <div class="col-lg-4 ml-auto">
+                  </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-2 col-sm-2 ml-auto">
                   prueba
                 </div>
-
+                
               </div>
             </div>
           </section>
@@ -371,9 +370,11 @@
               </div>
             </div>
           </div>
-
+          @section('scripts')
+          @parent
           <!-- colocar la animacion de la informacion de los contactos -->
-
+          
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLQwkZF3EFZTOBqjHkCpO_J2HZ3be6y6s"></script>
           <script src="/vendor-plantill/jquery/jquery.min.js"></script>
 
           <script type="text/javascript">
@@ -409,6 +410,6 @@
                   }
 
           </script>
-
+          @stop
 
 @stop
