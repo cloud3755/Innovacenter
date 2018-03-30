@@ -169,7 +169,7 @@
           </section>
 
           <section class="bg-primary text-white mb-0" id="Mapa">
-            <div class="container" id="validar">
+            <div class="container" id="validar"style="border-left-style: solid;">
               <h2 class="text-center text-uppercase text-secondary mb-0">Cobertura</h2>
               <hr class="star-dark mb-5">
               <div class="row">
@@ -184,11 +184,9 @@
                     <p class="text-center" id="escribir" style="color:black; border-left-style: solid;"></p>
                     <p class="text-center" id="telefono" style="color:black; border-left-style: solid;"></p>
                 </div>
-
               </div>
             </div>
           </section>
-
 
           <!-- Contact Section -->
           <section id="contact">
@@ -439,17 +437,17 @@
                       title: 'Cd. Mexico',
                       animation: google.maps.Animation.DROP
                     });
-
-                    map.addListener('center_changed', function() {
-                      // 3 seconds after the center of the map has changed, pan back to the
-                      // marker.
-                      window.setTimeout(function() {
-                        map.panTo(marker.getPosition());
-                      }, 3000);
-                    });
+                    //
+                    // map.addListener('center_changed', function() {
+                    //   // 3 seconds after the center of the map has changed, pan back to the
+                    //   // marker.
+                    //   window.setTimeout(function() {
+                    //     map.panTo(marker.getPosition());
+                    //   }, 3000);
+                    // });
 
                     marker.addListener('mouseover', function() {
-                      // map.setZoom(8);
+                      map.setZoom(6);
                       map.setCenter(marker.getPosition());
 
                       $('#cabecera').html('Jalisco');
@@ -476,9 +474,14 @@
 
                     });
 
+                    marker.addListener('mouseout', function() {
+                        map.setZoom(5);
+                        infowindow.close();
+                      });
+
                     marker2.addListener('mouseover', function() {
-                      // map.setZoom(8);
-                      map.setCenter(marker.getPosition());
+                       map.setZoom(6);
+                      map.setCenter(marker2.getPosition());
 
                       $('#cabecera').html('Nuevo leon');
                       $('#contactopersona').html('Contacto');
@@ -504,9 +507,14 @@
 
                     });
 
+                    marker2.addListener('mouseout', function() {
+                        map.setZoom(5);
+                        infowindowNuevoleon.close();
+                      });
+
                     marker3.addListener('mouseover', function() {
-                      // map.setZoom(8);
-                      map.setCenter(marker.getPosition());
+                      map.setZoom(6);
+                      map.setCenter(marker3.getPosition());
 
                       $('#cabecera').html('Cd. Mexico');
                       $('#contactopersona').html('Contacto');
@@ -532,7 +540,10 @@
 
                     });
 
-
+                    marker3.addListener('mouseout', function() {
+                        map.setZoom(5);
+                        infowindowcdmexico.close();
+                      });
 
                   }
 
