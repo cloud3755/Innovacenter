@@ -52,7 +52,7 @@ nav.navbar {
   width:  100%;
 }
 
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: 768px)
 {
     #map
     {
@@ -60,6 +60,5 @@ nav.navbar {
         width:  100%;
     }
 }
+
 /* << Movil >>    */
-
-

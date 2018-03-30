@@ -50,24 +50,24 @@
           </header>
           -->
          <!-- Header 2 -->
-<div id="carouselMain" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img/Innova-center.png">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/Innova-center.png">
-    </div>
-  </div>
-  <a class="carousel-control-prev carousel-control" href="#carouselMain" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next carousel-control" href="#carouselMain" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+        <div id="carouselMain" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/Innova-center.png">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/Innova-center.png">
+            </div>
+          </div>
+          <a class="carousel-control-prev carousel-control" href="#carouselMain" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next carousel-control" href="#carouselMain" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
 
           <!-- Portfolio Grid Section -->
@@ -178,14 +178,17 @@
 
                   </div>
                 </div>
-
-                <div class="col-lg-2 col-md-2 col-sm-2 ml-auto">
-                  prueba
+                <div class="col-lg-4 col-md-4 col-sm-4 ml-auto">
+                    <h2> <p class="text-center" id="cabecera" style="color:black; border-left-style: solid;"></p> </h2>
+                    <h3> <p class="text-center" id="contactopersona" style="color:black; border-left-style: solid;"></p> </h3>
+                    <p class="text-center" id="escribir" style="color:black; border-left-style: solid;"></p>
+                    <p class="text-center" id="telefono" style="color:black; border-left-style: solid;"></p>
                 </div>
 
               </div>
             </div>
           </section>
+
 
           <!-- Contact Section -->
           <section id="contact">
@@ -388,17 +391,41 @@
           $( document ).ready(function() { initMap(); });
 
                 function initMap() {
-                    var myLatlng = {lat: -25.363, lng: 131.044};
+                    var jalisco = {lat: 20.659699, lng: -103.349609};
+                    var nuevoleon = {lat: 25.592172, lng: -99.996195};
+                    var cdmexico = {lat: 19.432608, lng: -99.133208};
+
+                    var textojalisco = '<div style="color:#080808;"> <p> <u> Innova-center VG Jalisco </u> </p>  </div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: textojalisco
+                    });
 
                     var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 4,
-                      center: myLatlng
+                      zoom: 5,
+                      center: jalisco,
+                      label:'Jalisco'
                     });
 
                     var marker = new google.maps.Marker({
-                      position: myLatlng,
+                      position: jalisco,
                       map: map,
-                      title: 'Click to zoom'
+                      title: 'Jalisco',
+                      animation: google.maps.Animation.DROP
+                    });
+
+                    var marker2 = new google.maps.Marker({
+                      position: nuevoleon,
+                      map: map,
+                      title: 'Nuevo leon',
+                      animation: google.maps.Animation.DROP
+                    });
+
+                    var marker3 = new google.maps.Marker({
+                      position: cdmexico,
+                      map: map,
+                      title: 'Cd. Mexico',
+                      animation: google.maps.Animation.DROP
                     });
 
                     map.addListener('center_changed', function() {
@@ -410,8 +437,31 @@
                     });
 
                     marker.addListener('click', function() {
-                      map.setZoom(8);
+                      // map.setZoom(8);
                       map.setCenter(marker.getPosition());
+
+                      $('#cabecera').html('Jalisco');
+                      $('#contactopersona').html('Contacto');
+                      $('#escribir').html('Lic.Eduardo Gonzalez');
+                      $('#telefono').html('<b>Telefono:</b> <u> 3310153121 </u>');
+
+                       infowindow.open(map, marker);
+                       $('#cabecera').animate({
+                          'margin-left':'50px'
+                        },1500);
+
+                      $('#contactopersona').animate({
+                         'margin-left':'50px'
+                       },1500);
+
+                      $('#escribir').animate({
+                        'margin-left':'50px'
+                      },1500);
+
+                      $('#telefono').animate({
+                        'margin-left':'50px'
+                      },1500);
+
                     });
                   }
 
