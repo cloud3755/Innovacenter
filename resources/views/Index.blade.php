@@ -397,8 +397,20 @@
 
                     var textojalisco = '<div style="color:#080808;"> <p> <u> Innova-center VG Jalisco </u> </p>  </div>';
 
+                    var textonuevoleon = '<div style="color:#080808;"> <p> <u> Innova-center VG Nuevo leon </u> </p>  </div>';
+
+                    var textocdmexico = '<div style="color:#080808;"> <p> <u> Innova-center VG Cd de Mexico </u> </p>  </div>';
+
                     var infowindow = new google.maps.InfoWindow({
                         content: textojalisco
+                    });
+
+                    var infowindowNuevoleon = new google.maps.InfoWindow({
+                        content: textonuevoleon
+                    });
+
+                    var infowindowcdmexico = new google.maps.InfoWindow({
+                        content: textocdmexico
                     });
 
                     var map = new google.maps.Map(document.getElementById('map'), {
@@ -436,7 +448,7 @@
                       }, 3000);
                     });
 
-                    marker.addListener('click', function() {
+                    marker.addListener('mouseover', function() {
                       // map.setZoom(8);
                       map.setCenter(marker.getPosition());
 
@@ -463,6 +475,65 @@
                       },1500);
 
                     });
+
+                    marker2.addListener('mouseover', function() {
+                      // map.setZoom(8);
+                      map.setCenter(marker.getPosition());
+
+                      $('#cabecera').html('Nuevo leon');
+                      $('#contactopersona').html('Contacto');
+                      $('#escribir').html('Lic.Eduardo Gonzalez');
+                      $('#telefono').html('<b>Telefono:</b> <u> 3310153121 </u>');
+
+                       infowindowNuevoleon.open(map, marker2);
+                       $('#cabecera').animate({
+                          'margin-left':'50px'
+                        },1500);
+
+                      $('#contactopersona').animate({
+                         'margin-left':'50px'
+                       },1500);
+
+                      $('#escribir').animate({
+                        'margin-left':'50px'
+                      },1500);
+
+                      $('#telefono').animate({
+                        'margin-left':'50px'
+                      },1500);
+
+                    });
+
+                    marker3.addListener('mouseover', function() {
+                      // map.setZoom(8);
+                      map.setCenter(marker.getPosition());
+
+                      $('#cabecera').html('Cd. Mexico');
+                      $('#contactopersona').html('Contacto');
+                      $('#escribir').html('Lic.Eduardo Gonzalez');
+                      $('#telefono').html('<b>Telefono:</b> <u> 3310153121 </u>');
+
+                       infowindowcdmexico.open(map, marker3);
+                       $('#cabecera').animate({
+                          'margin-left':'50px'
+                        },1500);
+
+                      $('#contactopersona').animate({
+                         'margin-left':'50px'
+                       },1500);
+
+                      $('#escribir').animate({
+                        'margin-left':'50px'
+                      },1500);
+
+                      $('#telefono').animate({
+                        'margin-left':'50px'
+                      },1500);
+
+                    });
+
+
+
                   }
 
           </script>
