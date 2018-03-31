@@ -384,7 +384,7 @@
 
           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLQwkZF3EFZTOBqjHkCpO_J2HZ3be6y6s"></script>
           <script src="/vendor-plantill/jquery/jquery.min.js"></script>
-
+          <script src="/js/index/Contacto.js"></script>
           <script type="text/javascript">
 
           $( document ).ready(function() {
