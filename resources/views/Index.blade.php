@@ -36,9 +36,6 @@
             @stop
 @section('content')
 
-
-
-
           <!-- Header
           <header class="masthead bg-primary text-white text-center">
             <div class="container">
@@ -188,15 +185,21 @@
             </div>
           </section>
 
-          <!-- Contact Section -->
+
           <section id="contact">
+
             <div class="container">
               <h2 class="text-center text-uppercase text-secondary mb-0">Contactanos</h2>
+              <h2 class="text-center text-uppercase text-secondary mb-0" id="tipomensaje"></h2>
               <hr class="star-dark mb-5">
               <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                  <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+
+                <center>
+                  <button type="button" class="btn btn-info" id="btncontacto">Contactanos</button>
+                  <button type="button" class="btn btn-info" id="btnquejas">Quejas</button>
+                </center>
+
+                <div class="col-lg-6 mx-auto" id="ocultar">
                   <form name="sentMessage" id="contactForm" novalidate="novalidate">
                     <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -223,28 +226,26 @@
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
                         <label>Message</label>
                         <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                        <p class="help-block text-danger"></p>
                       </div>
                     </div>
-                    <br>
                     <div id="success"></div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
                     </div>
                   </form>
-
                 </div>
               </div>
             </div>
           </section>
+
           <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
           <div class="scroll-to-top d-lg-none position-fixed ">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
               <i class="fa fa-chevron-up"></i>
             </a>
           </div>
+          <!-- Modal -->
 
-          <!-- Portfolio Modals -->
 
           <!-- Portfolio Modal 1 -->
           <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
@@ -386,7 +387,23 @@
 
           <script type="text/javascript">
 
-          $( document ).ready(function() { initMap(); });
+          $( document ).ready(function() {
+                    initMap();
+
+                    $('#ocultar').hide();
+
+                    $("#btnquejas").on( "click", function() {
+                      $('#ocultar').show();
+                      $('#tipomensaje').html('Queja')
+                     });
+
+                   $("#btncontacto").on( "click", function() {
+
+                     $('#ocultar').show();
+
+                     $('#tipomensaje').html('Contactanos')
+                    });
+                });
 
                 function initMap() {
                     var jalisco = {lat: 20.659699, lng: -103.349609};
