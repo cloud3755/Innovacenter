@@ -11,6 +11,15 @@
 |
 */
 
+/*
+<INDEX>
+*/
 Route::get('/', function () {
     return view('Index');
 });
+
+Route::post('/Contacto' , 'ContactoController@nuevo');
+
+/*
+</INDEX> 
+*/

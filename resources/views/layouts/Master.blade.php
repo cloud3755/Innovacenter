@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @section('css')
             <link rel="stylesheet" href="/vendor-plantill/bootstrap/css/bootstrap.css">
@@ -107,7 +107,8 @@
           <script src="/vendor-plantill/jquery-easing/jquery.easing.min.js"></script>
           <script src="/vendor-plantill/magnific-popup/jquery.magnific-popup.min.js"></script>
           <script src="/js/jqBootstrapValidation.js"></script>
-          <script src="/js/contact_me.js"></script>
+          <script src="/js/jqBootstrapValidation.min.js"></script>
+          <!--<script src="/js/contact_me.js"></script>-->
           <script src="/js/freelancer.min.js"></script>
 
           <!--bootstrap-->
