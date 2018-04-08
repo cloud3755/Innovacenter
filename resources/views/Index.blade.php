@@ -149,18 +149,133 @@
               <h2 class="text-center text-uppercase text-white">Inteligencia del negocio</h2>
               <hr class="star-light mb-5">
               <div class="row">
-                <div class="col-lg-4 ml-auto">
-                  <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <div class="col-lg-12 ml-auto">
+                  <div class="organigrama">
+                    <ul>
+                      <li>
+                        <a href="#">Cobranza telefonica</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>* Ejecutivos con Licenciatura</p>
+                              <p>* 3 años de experiencia</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <a href="#">Estrategia</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>* Historial de estrategias</p>
+                              <p>* Elaboracion de catalogo</p>
+                              <p>de estrategia por servicio</p>
+                              <p>* Analisis por estrategia de catalogo</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <a href="#">Analisis y clasificacion</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>* Detectar clientes potenciales</p>
+                              <p>para visitar</p>
+                              <p>* Clasificacion de cartera</p>
+                              <p>* Reportes estrategicos</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
                 </div>
-                <div class="col-lg-4 mr-auto">
-                  <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <div class="col-lg-12 ml-auto">
+                  <div class="organigrama">
+
+                    <ul>
+                      <li>
+                        <a href="#">Documentacion y formatos</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>* Elaboracion de formatos</p>
+                              <p>que se adecuen a las</p>
+                              <p>necesidades del servicio</p>
+                              <p>Formatos que cumplan</p>
+                              <p>lineamientos</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <a href="#">Localizacion de clientes</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>* Internet</p>
+                              <p>* Libros de paginas</p>
+                              <p>* Telmex red</p>
+                              <p>* Investigacion en</p>
+                              <p>calle</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li> <a href="#">Visita domiciliaria</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>Ruta</p>
+                              <p>* Clientes potenciales y eficiencia en campo</p>
+                              <p>* Punto a y finaliza en z</p>
+                              <p>* Punto z y finaliza en a</p>
+                              <p>* 2 anteriores horarios variables</p>
+                              <p>* Por colonia</p>
+                              <p>* Por cuadrante</p>
+                              <p>* Por saldos</p>
+                              <p>* Rutas laborales</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li> <a href="#">Masivos y cartas</a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <p>Medios:</p>
+                              <p>* Whatsapp</p>
+                              <p>* Facebook</p>
+                              <p>* Correo electronico</p>
+                              <p>* Mensajes de texto</p>
+                              <p>* Carta domiciliaria</p>
+                              <p>* Grabaciones telefonicas</p>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
                 </div>
-              </div>
-              <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="#">
-                  <i class="fa fa-download mr-2"></i>
-                  Download Now!
-                </a>
               </div>
             </div>
           </section>
