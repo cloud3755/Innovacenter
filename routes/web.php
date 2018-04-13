@@ -14,9 +14,7 @@
 /*
 <INDEX>
 */
-Route::get('/', function () {
-    return view('Index');
-});
+Route::get('/', "IndexController@Index");
 
 Route::post('/Contacto' , 'ContactoController@nuevo');
 
