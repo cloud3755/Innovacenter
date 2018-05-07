@@ -63,7 +63,7 @@ return [
             'driver' => 'mysql',
             'host' => RDS_HOSTNAME,
             'port' => env('DB_PORT', '3306'),
-            'database' => RDS_DB_NAME,
+            'database' => 'innovacenter',
             'username' => RDS_USERNAME,
             'password' => RDS_PASSWORD,
             'unix_socket' => env('DB_SOCKET', ''),
