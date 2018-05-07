@@ -362,11 +362,11 @@
           </div>
           <!-- Modal -->
 
-          @if(isset($Servicios))
+          <!-- @if(isset($Servicios)) -->
 
-          @foreach($Servicios as $servicio)
+          <!-- @foreach($Servicios as $servicio) -->
           <!-- Portfolio Modal 1 -->
-          <div class="portfolio-modal mfp-hide" id="portfolio-modal-{{$servicio->id}}">
+          <!-- <div class="portfolio-modal mfp-hide" id="portfolio-modal-{{$servicio->id}}">
             <div class="portfolio-modal-dialog bg-white">
               <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
@@ -385,11 +385,11 @@
                 </div>
               </div>
             </div>
-          </div>
-          @endforeach
+          </div> -->
+          <!-- @endforeach -->
 
-          @endif
-        
+          <!-- @endif -->
+
           @section('scripts')
           @parent
           <!-- colocar la animacion de la informacion de los contactos -->
