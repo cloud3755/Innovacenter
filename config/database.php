@@ -1,10 +1,5 @@
 <?php
 
-define ('RDS_HOSTNAME',$SERVER['RDS_HOSTNAME']);
-define ('RDS_USERNAME',$SERVER['RDS_USERNAME']);
-define ('RDS_PASSWORD',$SERVER['RDS_PASSWORD']);
-define ('RDS_DB_NAME',$SERVER['RDS_DB_NAME']);
-
 return [
 
     /*
@@ -44,28 +39,13 @@ return [
             'prefix' => '',
         ],
 
-        // 'mysql' => [
-        //     'driver' => 'mysql',
-        //     'host' => env('DB_HOST', '127.0.0.1'),
-        //     'port' => env('DB_PORT', '3306'),
-        //     'database' => env('DB_DATABASE', 'innovacenter'),
-        //     'username' => env('DB_USERNAME', 'root'),
-        //     'password' => env('DB_PASSWORD', ''),
-        //     'unix_socket' => env('DB_SOCKET', ''),
-        //     'charset' => 'utf8mb4',
-        //     'collation' => 'utf8mb4_unicode_ci',
-        //     'prefix' => '',
-        //     'strict' => true,
-        //     'engine' => null,
-        // ],
-
         'mysql' => [
             'driver' => 'mysql',
-            'host' => RDS_HOSTNAME,
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => 'innovacenter',
-            'username' => RDS_USERNAME,
-            'password' => RDS_PASSWORD,
+            'database' => env('DB_DATABASE', 'innovacenter'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -73,6 +53,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+
 
         'pgsql' => [
             'driver' => 'pgsql',

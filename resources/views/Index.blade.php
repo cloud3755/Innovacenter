@@ -319,34 +319,36 @@
                      {{ csrf_field() }}
                     <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Name</label>
-                        <input class="form-control" name="nombre" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                        <label>Nombre</label>
+                        <input class="form-control" name="nombre" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Please enter your name.">
                         <p class="help-block text-danger"></p>
                       </div>
                     </div>
                     <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Email Address</label>
-                        <input class="form-control" name="correo" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                        <label>Direccion de correo</label>
+                        <input class="form-control" name="correo" id="email" type="email" placeholder="Direccion de correo" required="required" data-validation-required-message="Please enter your email address.">
                         <p class="help-block text-danger"></p>
                       </div>
                     </div>
                     <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Phone Number</label>
-                        <input class="form-control" name="telefono" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                        <label>Numero de telefono</label>
+                        <input class="form-control" name="telefono" id="phone" type="tel" placeholder="Numero de telefono" required="required" data-validation-required-message="Please enter your phone number.">
                         <p class="help-block text-danger"></p>
                       </div>
                     </div>
                     <div class="control-group">
                       <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                        <label>Message</label>
-                        <textarea class="form-control" name="mensaje" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <label>Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Please enter a message."></textarea>
                       </div>
                     </div>
                     <div id="success"></div>
                     <div class="form-group">
-                      <button type="button" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                      <center>
+                        <button type="button" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
+                      </center>
                     </div>
                   </form>
                 </div>
