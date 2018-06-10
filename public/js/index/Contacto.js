@@ -7,15 +7,15 @@ $(function(){
 function sendContact()
                 {
                   var nombre = $('#name').val();
-                  var telefono = $('#email').val();
-                  var correo = $('#phone').val();
+                  var telefono = $('#phone').val();
+                  var correo = $('#email').val();
                   var mensaje = $('#message').val();
                   $.ajaxSetup({
                     headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }         
+                    }
                     });
-                  $.ajax( 
+                  $.ajax(
                   {
                     url: '/Contacto',
                     type: "post",
@@ -25,9 +25,9 @@ function sendContact()
                       correo:correo,
                       mensaje:mensaje
                       },
-                    success: function(response){ 
-                    
-                    alert(JSON.stringify(response)); 
+                    success: function(response){
+
+                    alert(JSON.stringify(response));
                     },
                     error: function(response){
                     alert('Error'+JSON.stringify(response));

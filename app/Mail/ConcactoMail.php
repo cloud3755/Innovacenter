@@ -11,7 +11,7 @@ use App\Contacto;
 class ConcactoMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $Contacto; 
+    public $Contacto;
     /**
      * Create a new message instance.
      *
@@ -31,7 +31,7 @@ class ConcactoMail extends Mailable
     {
         return $this->view('mails.Contacto')
                     ->with('name','Arturo')
-                    ->from('arturodlt83@gmail.com','Arturo')
+                    ->from('info@innovacentervg.com','Innova')
                     ->subject('Contacto');
     }
 }

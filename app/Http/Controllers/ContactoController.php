@@ -23,11 +23,11 @@ class ContactoController extends Controller
 
         $arrayDestinos = array("dlogon@outlook.com","arturodlt83@gmail.com");
 
-        Mail::to('ilemiranda1@gmail.com','Arturo')
+        Mail::to('info@innovacentervg.com','Innova')
                 ->cc($arrayDestinos)
                // ->cc("arturodlt83@gmail.com","Artur")
                 ->send(new ConcactoMail($contact));
-        
+
 
         return response()->json("OK");
     }
