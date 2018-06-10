@@ -47,6 +47,7 @@
           </header>
           -->
          <!-- Header 2 -->
+         <!-- CARRUSEL
         <div id="carouselMain" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -65,14 +66,21 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
-
+        -->
+        <section>
+            <div class="container">
+            <span>&nbsp;</span><span>&nbsp;</span>
+              <h1 class="text-center text-uppercase text-secondary mb-0">Presentaci&oacute;n</h2>
+            <iframe width="100%" height="470" src="https://www.youtube.com/embed/_eUvTvfxEe0?disablekb=1&rel=0&autohide=2"  allowfullscreen></iframe>
+            <div>
+        </section>
           <!-- Portfolio Grid Section -->
           <section class="portfolio" id="portfolio">
             <div class="container">
               <h2 class="text-center text-uppercase text-secondary mb-0">Servicios</h2>
               <hr class="star-dark mb-5">
               <div class="row">
+              <!--
                 <div class="col-md-6 col-lg-4">
                   <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -84,6 +92,7 @@
                     <p class="text-center">Cobranza Legal</p>
                   </a>
                 </div>
+                
                 <div class="col-md-6 col-lg-4">
                   <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -95,6 +104,7 @@
                     <p class="text-center">Cobranza Telefonica</p>
                   </a>
                 </div>
+                -->
                 <div class="col-md-6 col-lg-4">
                   <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -103,7 +113,7 @@
                       </div>
                     </div>
                     <img class="img-fluid" src="img/portfolio/cobranza-dom.jpg" alt="">
-                    <p class="text-center">Cobranza Domiciliaria</p>
+                    <p class="text-center">Servicio personal</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -114,7 +124,7 @@
                       </div>
                     </div>
                     <img class="img-fluid" src="img/portfolio/asesoria.png" alt="">
-                    <p class="text-center" >Asesoria y ejecucion</p>
+                    <p class="text-center" >Servicio legal</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -125,7 +135,7 @@
                       </div>
                     </div>
                     <img class="img-fluid" src="img/portfolio/validacion.png" alt="">
-                    <p class="text-center" >Verificacion y validacion de credito</p>
+                    <p class="text-center" >Servicio empresa</p>
                   </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -142,8 +152,15 @@
               </div>
             </div>
           </section>
-
-          <!-- About Section -->
+          
+          <section>
+            <div class="container">
+            <span>&nbsp;</span><span>&nbsp;</span>
+              <h1 class="text-center text-uppercase text-secondary mb-0">Inteligencia del negocio</h2>
+            <iframe width="100%" height="470" src="https://www.youtube.com/embed/_yx0ZIvESWo?disablekb=1&rel=0&autohide=2"  allowfullscreen></iframe>
+            <div>
+          </section>
+          <!-- About Section 
           <section class="bg-primary text-white mb-0" id="about">
             <div class="container">
               <h2 class="text-center text-uppercase text-white">Inteligencia del negocio</h2>
@@ -279,7 +296,7 @@
               </div>
             </div>
           </section>
-
+          -->
           <section class="bg-primary text-white mb-0" id="Mapa">
             <div class="container" id="validar"style="border-left-style: solid;">
               <h2 class="text-center text-uppercase text-secondary mb-0">Cobertura</h2>
@@ -378,7 +395,9 @@
                   <div class="col-lg-8 mx-auto">
                     <h2 class="text-secondary text-uppercase mb-0">{{$servicio->titulo}}</h2>
                     <hr class="star-dark mb-5">
-                    <img class="img-fluid mb-5" src="{{$servicio->imagen}}" alt="">
+                    @if($servicio->imagen)
+                      {!!$servicio->imagen!!}
+                    @endif
                     <p class="mb-8">{!!$servicio->descripcion!!}</p>
                     <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                       <i class="fa fa-close"></i>

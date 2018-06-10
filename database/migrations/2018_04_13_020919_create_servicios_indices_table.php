@@ -17,7 +17,7 @@ class CreateServiciosIndicesTable extends Migration
             $table->increments('id');
             $table->string('titulo', 50);
             $table->string('descripcion', 400);
-            $table->string('imagen', 100);
+            $table->string('imagen', 500);//MEDIA
             $table->boolean('activo');
             //$table->timestamps();
         });

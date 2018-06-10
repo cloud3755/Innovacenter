@@ -14,4 +14,9 @@ class IndexController extends Controller
         $Servicios = $Servicios->all();
         return view('Index', \compact('Servicios'));
     }
+
+    public function avisoPrivacidad()
+    {
+        return response()->file(public_path()."/pdf/AVISO DE PRIVACIDAD INNOVA CENTER.pdf");
+    }
 }

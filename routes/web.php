@@ -16,6 +16,8 @@
 */
 Route::get('/', "IndexController@Index");
 
+Route::get('/avisoprivacidad', "IndexController@avisoPrivacidad");
+
 Route::post('/Contacto' , 'ContactoController@nuevo');
 
 /*
